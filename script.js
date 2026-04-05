@@ -387,8 +387,16 @@ if (contactForm) {
     btnLoader.style.display = 'flex';
     submitBtn.disabled = true;
 
-    // Simulate API call (replace with real fetch in production)
-    setTimeout(() => {
+    // Real API call to Netlify
+    const formData = new FormData(contactForm);
+    formData.append("form-name", "contact");
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString()
+    })
+    .then(() => {
       btnText.style.display   = 'inline-flex';
       btnLoader.style.display = 'none';
       submitBtn.disabled = false;
@@ -400,7 +408,14 @@ if (contactForm) {
       setTimeout(() => {
         formSuccess.style.display = 'none';
       }, 5000);
-    }, 2000);
+    })
+    .catch((error) => {
+      console.error('Form submission error:', error);
+      btnText.style.display   = 'inline-flex';
+      btnLoader.style.display = 'none';
+      submitBtn.disabled = false;
+      alert("There was an error sending the message. Please try again.");
+    });
   });
 }
 
