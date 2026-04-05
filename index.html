@@ -525,7 +525,7 @@
             <li><i class="ri-check-circle-fill"></i> Basic SEO Setup</li>
             <li><i class="ri-check-circle-fill"></i> Contact Details</li>
             <li><i class="ri-check-circle-fill"></i> 1 Month Support</li>
-          </ul>          </ul>
+          </ul>
           <a href="#contact" class="btn btn-outline" id="basic-cta">Get Started</a>
         </div>
 
@@ -635,6 +635,7 @@
 
         <!-- Contact Form -->
         <form class="contact-form reveal" name="contact" id="contactForm" method="POST" data-netlify="true" novalidate>
+          <input type="hidden" name="form-name" value="contact" />
           <div class="form-row">
             <div class="form-group">
               <label for="contactName">Full Name <span class="required">*</span></label>
