@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Webynix – A cutting-edge web development, AI solutions, and digital services company helping businesses innovate and grow in the digital era." />
+  <meta name="keywords" content="web development, AI solutions, digital marketing, UI/UX design, graphic design, Webynix" />
+  <meta name="author" content="Webynix" />
+  <title>Webynix – Web Development & AI Solutions</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+
+  <!-- Remix Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Webynix Home">
+        <img src="./webynix_.PNG" alt="Webynix Logo" class="logo-img" />
+      </a>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#home"        class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about"       class="nav-link" data-section="about">About</a></li>
+        <li><a href="#services"    class="nav-link" data-section="services">Services</a></li>
+        <li><a href="#portfolio"   class="nav-link" data-section="portfolio">Portfolio</a></li>
+        <li><a href="#process"     class="nav-link" data-section="process">Process</a></li>
+        <li><a href="#team"        class="nav-link" data-section="team">Team</a></li>
+        <li><a href="#testimonials" class="nav-link" data-section="testimonials">Reviews</a></li>
+        <li><a href="#pricing"     class="nav-link" data-section="pricing">Pricing</a></li>
+        <li><a href="#contact"     class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <i class="ri-moon-fill" id="themeIcon"></i>
+        </button>
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Open mobile menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home" aria-label="Hero section">
+    <!-- Animated background orbs -->
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Floating tech badges -->
+    <div class="floating-badges">
+      <span class="badge badge-1"><i class="ri-code-s-slash-line"></i> React</span>
+      <span class="badge badge-2"><i class="ri-robot-fill"></i> AI/ML </span>
+      <span class="badge badge-3"><i class="ri-cloud-fill"></i> Cloud</span>
+      <span class="badge badge-4"><i class="ri-palette-fill"></i> Design</span>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-tag reveal">
+        <i class="ri-sparkling-fill"></i> Trusted by 10+ Businesses
+      </div>
+      <h1 class="hero-headline reveal">
+        We Build <span class="gradient-text">Digital Futures</span><br />
+        That Drive Results
+      </h1>
+      <p class="hero-subtext reveal">
+        Webynix crafts high-performance web experiences, AI-powered solutions,<br class="desktop-br" />
+        and stunning digital products — from idea to launch and beyond.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#contact" class="btn btn-primary" id="hireCta">
+          <i class="ri-send-plane-fill"></i> Hire Us
+        </a>
+        <a href="#portfolio" class="btn btn-secondary" id="viewWorkCta">
+          <i class="ri-eye-line"></i> View Work
+        </a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-target="5">0</span><span>+</span>
+          <small>Projects Done</small>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="5">0</span><span>+</span>
+          <small>Happy Clients</small>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="1">0</span><span>+</span>
+          <small>Years Experience</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+      <div class="mouse"><div class="wheel"></div></div>
+    </a>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section about" id="about" aria-label="About Webynix">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Who We Are</span>
+        <h2 class="section-title">Crafting Excellence in <span class="gradient-text">Every Pixel</span></h2>
+        <p class="section-desc">We are a passionate team of developers, designers, and digital strategists committed to delivering world-class digital experiences.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-image-wrapper">
+            <div class="about-glow"></div>
+            <div class="about-code-card">
+              <div class="code-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="code-title">webynix.config.js</span>
+              </div>
+              <div class="code-body">
+                <pre><code><span class="c-purple">const</span> <span class="c-blue">webynix</span> = {
+  <span class="c-green">mission</span>: <span class="c-yellow">"Build the Future"</span>,
+  <span class="c-green">services</span>: [
+    <span class="c-yellow">"Web Development"</span>,
+    <span class="c-yellow">"Graphics Design"</span>,
+    <span class="c-yellow">"UI/UX Design"</span>,
+  ],
+  <span class="c-green">clients</span>: <span class="c-purple">5+</span>,
+  <span class="c-green">quality</span>: <span class="c-yellow">"Premium"</span>,
+};
+
+<span class="c-purple">export default</span> webynix;</code></pre>
+              </div>
+            </div>
+            <!-- Achievement badges -->
+            <div class="achievement top-right">
+              <i class="ri-award-fill"></i>
+              <div><strong>Top Rated</strong><small>2025 Agency</small></div>
+            </div>
+            <div class="achievement bottom-left">
+              <i class="ri-star-fill"></i>
+              <div><strong>4.9 / 5</strong><small>Client Rating</small></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <p class="about-intro">
+            Founded with a vision to democratize premium digital services, <strong>Webynix</strong> has grown into a full-service digital agency trusted by startups, SMEs, and enterprises across the globe.
+          </p>
+
+          <div class="about-mission">
+            <div class="mission-card">
+              <i class="ri-eye-fill"></i>
+              <div>
+                <h4>Our Vision</h4>
+                <p>To be the most innovative digital partner for forward-thinking businesses worldwide.</p>
+              </div>
+            </div>
+            <div class="mission-card">
+              <i class="ri-target-fill"></i>
+              <div>
+                <h4>Our Mission</h4>
+                <p>Deliver cutting-edge digital solutions that create measurable impact and lasting value.</p>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="why-title">Why Choose Webynix?</h3>
+          <div class="why-grid">
+            <div class="why-card">
+              <i class="ri-rocket-2-fill"></i>
+              <h4>Fast Delivery</h4>
+              <p>We respect timelines and deliver high-quality work on schedule, every time.</p>
+            </div>
+            <div class="why-card">
+              <i class="ri-shield-check-fill"></i>
+              <h4>Quality First</h4>
+              <p>Every project undergoes rigorous quality assurance before going live.</p>
+            </div>
+            <div class="why-card">
+              <i class="ri-customer-service-fill"></i>
+              <h4>24/7 Support</h4>
+              <p>Our dedicated support team is always ready to help you succeed.</p>
+            </div>
+            <div class="why-card">
+              <i class="ri-lightbulb-fill"></i>
+              <h4>Innovation Driven</h4>
+              <p>We stay ahead of trends to give you tomorrow's solutions today.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section class="section services" id="services" aria-label="Our Services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">What We Do</span>
+        <h2 class="section-title">Services Built for <span class="gradient-text">Growth</span></h2>
+        <p class="section-desc">A complete suite of digital services to take your business from concept to market dominance.</p>
+      </div>
+
+      <div class="services-grid">
+        
+        <div class="service-card reveal featured" id="svc-webdev">
+          <div class="featured-badge">Most Popular</div>
+          <div class="service-icon"><i class="ri-code-s-slash-line"></i></div>
+          <h3>Web Development</h3>
+          <p>Blazing-fast, scalable websites and web apps built with modern frameworks like React, Next.js, and Node.js.</p>
+          <ul class="service-features">
+            <li><i class="ri-check-line"></i> Responsive Design</li>
+            <li><i class="ri-check-line"></i> SEO Optimized</li>
+            <li><i class="ri-check-line"></i> High Performance</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="ri-arrow-right-line"></i></a>
+        </div>
+
+        <div class="service-card reveal" id="svc-graphic">
+          <div class="service-icon"><i class="ri-palette-fill"></i></div>
+          <h3>Graphic Designing</h3>
+          <p>Eye-catching visual identities, brand kits, and marketing materials that leave a lasting impression.</p>
+          <ul class="service-features">
+            <li><i class="ri-check-line"></i> Brand Identity</li>
+            <li><i class="ri-check-line"></i> Logo Design</li>
+            <li><i class="ri-check-line"></i> Print & Digital</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="ri-arrow-right-line"></i></a>
+        </div>
+
+        <div class="service-card reveal" id="svc-uiux">
+          
+          <div class="service-icon"><i class="ri-layout-masonry-fill"></i></div>
+          <h3>UI/UX Design</h3>
+          <p>User-centric interfaces designed with Figma — beautiful, intuitive, and conversion-focused for every screen.</p>
+          <ul class="service-features">
+            <li><i class="ri-check-line"></i> Wireframing</li>
+            <li><i class="ri-check-line"></i> Prototyping</li>
+            <li><i class="ri-check-line"></i> User Research</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PORTFOLIO ===================== -->
+  <section class="section portfolio" id="portfolio" aria-label="Portfolio Projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our Work</span>
+        <h2 class="section-title">Projects We're <span class="gradient-text">Proud Of</span></h2>
+        <p class="section-desc">A curated selection of our most impactful work across industries and platforms.</p>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <article class="portfolio-card reveal" data-category="web" id="proj-ecommerce">
+          <div class="portfolio-img"> 
+            <img src="./image.png" alt="E-Commerce Platform" />
+            <div class="portfolio-overlay">
+              <a href="https://threadly-webynix.netlify.app/" class="demo-btn"><i class="ri-external-link-line"></i> Live Demo</a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">Web Dev</span>
+            <h3>Threadly – E-Commerce Platform</h3>
+            <p>A full-stack e-commerce solution real-time inventory, and seamless checkout.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card reveal" data-category="design" id="proj-fintech">
+          <div class="portfolio-img">
+            <img src="./quiz.png" alt="Banking App" />
+            <div class="portfolio-overlay">
+              <a href="https://boopathirajam.github.io/Quizprep/" class="demo-btn"><i class="ri-external-link-line"></i> Live Demo</a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">Web Dev</span>
+            <h3>Quizprep – Quiz App</h3>
+            <p>An interactive quiz preparation platform offering multiple-choice questions, user-friendly interface, instant feedback, and efficient learning experience for students.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card reveal" data-category="web" id="proj-saas">
+          <div class="portfolio-img">
+            <img src="./tictactoe.png" alt="SaaS Dashboard" />
+            <div class="portfolio-overlay">
+              <a href="https://boopathirajam.github.io/TicTacToe/" class="demo-btn"><i class="ri-external-link-line"></i> Live Demo</a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">Web Dev</span>
+            <h3>TicTacToe – Game</h3>
+            <p>A simple, interactive Tic Tac Toe web game allowing two players to compete, featuring responsive design, intuitive gameplay, and real-time win detection.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROCESS ===================== -->
+  <section class="section process" id="process" aria-label="Our Process">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">How We Work</span>
+        <h2 class="section-title">A Process Built for <span class="gradient-text">Success</span></h2>
+        <p class="section-desc">Our streamlined 4-step process ensures your project is delivered on time, on budget, and above expectations.</p>
+      </div>
+
+      <div class="process-track">
+        <div class="process-line"></div>
+
+        <div class="process-step reveal" id="step-1">
+          <div class="step-number">01</div>
+          <div class="step-icon"><i class="ri-search-eye-line"></i></div>
+          <div class="step-content">
+            <h3>Discovery &amp; Requirements</h3>
+            <p>We deep-dive into your goals, audience, and competition to define a crystal-clear project scope and strategy.</p>
+          </div>
+        </div>
+
+        <div class="process-step reveal" id="step-2">
+          <div class="step-number">02</div>
+          <div class="step-icon"><i class="ri-pencil-ruler-2-fill"></i></div>
+          <div class="step-content">
+            <h3>Design &amp; Prototyping</h3>
+            <p>Our designers craft pixel-perfect wireframes and interactive prototypes that bring your vision to life before a single line of code is written.</p>
+          </div>
+        </div>
+
+        <div class="process-step reveal" id="step-3">
+          <div class="step-number">03</div>
+          <div class="step-icon"><i class="ri-code-s-slash-line"></i></div>
+          <div class="step-content">
+            <h3>Development &amp; Testing</h3>
+            <p>Agile sprints, clean code, and comprehensive QA testing ensure your product is robust, secure, and blazing fast.</p>
+          </div>
+        </div>
+
+        <div class="process-step reveal" id="step-4">
+          <div class="step-number">04</div>
+          <div class="step-icon"><i class="ri-rocket-2-fill"></i></div>
+          <div class="step-content">
+            <h3>Launch &amp; Support</h3>
+            <p>We deploy your product with zero downtime, monitor performance post-launch, and provide ongoing support to keep you growing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TEAM ===================== -->
+  <section class="section team" id="team" aria-label="Our Team">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">The People</span>
+        <h2 class="section-title">Meet the <span class="gradient-text">Brilliant Minds</span></h2>
+        <p class="section-desc">A diverse team of passionate experts united by a shared mission — to build exceptional digital experiences.</p>
+      </div>
+
+      <div class="team-grid">
+
+        <!-- Founder Card -->
+        <div class="team-card founder reveal" id="team-founder">
+          <div class="founder-badge"><i class="ri-vip-crown-fill"></i> Founder & CEO</div>
+          <div class="team-avatar">
+            <img src="https://ui-avatars.com/api/?name=Boopathi+Raja&background=0ea5e9&color=fff&size=200" alt="Boopathiraja M" class="avatar-img">
+          </div>
+          <div class="team-info">
+            <h3>Boopathiraja M</h3>
+            <span class="team-role">Founder &amp; CEO</span>
+            <p class="team-bio">Visionary entrepreneur with 10+ years building scalable tech products. Former lead at Google and Microsoft.</p>
+            <div class="team-socials">
+              <a href="https://www.linkedin.com/in/boopathirajam/" class="social-link" aria-label="Alex LinkedIn"><i class="ri-linkedin-fill"></i></a>
+              <a href="https://instagram.com/mr_innocent_br/" class="social-link" aria-label="Alex GitHub"><i class="ri-instagram-fill"></i></a>
+              <a href="https://wa.me/916374486374" class="social-link" aria-label="Alex Twitter"><i class="ri-whatsapp-fill"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card reveal" id="team-webdev">
+          <div class="team-avatar">
+            <img src="https://ui-avatars.com/api/?name=Kathir+M&background=0ea5e9&color=fff&size=200" alt="Sara Reyes" class="avatar-img">
+          </div>
+          <div class="team-info">
+            <h3>Kathir M</h3>
+            <span class="team-role">Lead Web Developer</span>
+            <p class="team-bio">Full-stack wizard specializing in React & Node.js. Built platforms serving 2M+ users.</p>
+            <div class="team-socials">
+              <a href="https://www.linkedin.com/in/kathir-m-1b8214323" class="social-link" aria-label="Kathir LinkedIn"><i class="ri-linkedin-fill"></i></a>
+              <a href="https://www.instagram.com/kathir__200522_/" class="social-link" aria-label="Kathir Instagram"><i class="ri-instagram-fill"></i></a>
+              <a href="https://wa.me/919944713147" class="social-link" aria-label="Kathir WhatsApp"><i class="ri-whatsapp-fill"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card reveal" id="team-designer">
+          <div class="team-avatar">
+            <img src="https://ui-avatars.com/api/?name=Naveen&background=f59e0b&color=fff&size=200" alt="Maya Patel" class="avatar-img">
+          </div>
+          <div class="team-info">
+            <h3>Naveen </h3>
+            <span class="team-role">UI/UX Designer</span>
+            <p class="team-bio">Award-winning designer who believes great design is invisible — and transformative.</p>
+            <div class="team-socials">
+              <a href="https://www.linkedin.com/in/navaneetha-krishnan-g" class="social-link" aria-label="Naveen LinkedIn"><i class="ri-linkedin-fill"></i></a>
+              <a href="https://www.instagram.com/itz_me_.naveen127/" class="social-link" aria-label="Naveen Instagram"><i class="ri-instagram-fill"></i></a>
+              <a href="https://wa.me/917339509852" class="social-link" aria-label="Naveen WhatsApp"><i class="ri-whatsapp-fill"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="section testimonials" id="testimonials" aria-label="Client Testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Client Love</span>
+        <h2 class="section-title">What Our Clients <span class="gradient-text">Say</span></h2>
+        <p class="section-desc">Don't take our word for it — hear from the businesses we've helped transform.</p>
+      </div>
+
+      <div class="testimonial-wrapper reveal">
+        <div class="testimonial-track" id="testimonialTrack">
+
+          <div class="testimonial-card" role="article">
+            <div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+            <p class="testimonial-text">"I had a great experience browsing this e-commerce website. The design is modern, products are well-presented, and navigation is smooth. It feels professional and user-friendly across devices. Excellent work!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #7c3aed, #4f46e5);">VK</div>
+              <div class="author-info">
+                <strong>Venkatesh</strong>
+                <span>CEO, Threadly.in</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" role="article">
+            <div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+            <p class="testimonial-text">"I really enjoyed using this Tic Tac Toe website. The interface is clean, responsive, and easy to understand. Gameplay is smooth, and it works perfectly on both desktop and mobile. Looking forward to more innovative creations from this developer!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #0ea5e9, #6366f1);">AK</div>
+              <div class="author-info">
+                <strong>Aravind Kumar</strong>
+                <span>CEO, TechNova Solutions</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" role="article">
+            <div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+            <p class="testimonial-text">"I found this QuizPrep platform very useful for quick learning and self-assessment. The interface is simple, questions are well-structured, and it provides a smooth user experience. It’s a great tool for students to practice and improve their knowledge efficiently. Impressive work!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #10b981, #0ea5e9);">KR</div>
+              <div class="author-info">
+                <strong>Karthik Rajendran</strong>
+                <span>Founder, EduTech Innovators</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controls -->
+        <div class="testimonial-controls">
+          <button class="t-btn" id="tPrev" aria-label="Previous testimonial"><i class="ri-arrow-left-s-line"></i></button>
+          <div class="t-dots" id="tDots" aria-label="Testimonial navigation dots"></div>
+          <button class="t-btn" id="tNext" aria-label="Next testimonial"><i class="ri-arrow-right-s-line"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRICING ===================== -->
+  <section class="section pricing" id="pricing" aria-label="Pricing Plans">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Pricing</span>
+        <h2 class="section-title">Transparent, Fair <span class="gradient-text">Pricing</span></h2>
+        <p class="section-desc">Choose a plan that fits your needs. No hidden fees, no surprises — just results.</p>
+      </div>
+
+  
+      <div class="pricing-grid reveal">
+
+        <div class="pricing-card" id="plan-basic">
+          <div class="plan-header">
+            <div class="plan-icon"><i class="ri-seedling-fill"></i></div>
+            <h3>Basic</h3>
+            <div class="plan-price">
+              <span class="currency">$</span>
+              <span class="amount monthly-price">999</span>
+              <span class="period">/mo</span>
+            </div>
+            <p>Perfect for startups and small businesses just getting started.</p>
+          </div>
+          <ul class="plan-features">
+            <li><i class="ri-check-circle-fill"></i> Landing Pages</li>
+            <li><i class="ri-check-circle-fill"></i> Responsive Design</li>
+            <li><i class="ri-check-circle-fill"></i> Basic SEO Setup</li>
+            <li><i class="ri-check-circle-fill"></i> Contact Details</li>
+            <li><i class="ri-check-circle-fill"></i> 1 Month Support</li>
+          </ul>          </ul>
+          <a href="#contact" class="btn btn-outline" id="basic-cta">Get Started</a>
+        </div>
+
+        <div class="pricing-card recommended" id="plan-standard">
+          <div class="recommended-badge">⭐ Recommended</div>
+          <div class="plan-header">
+            <div class="plan-icon"><i class="ri-rocket-2-fill"></i></div>
+            <h3>Standard</h3>
+            <div class="plan-price">
+              <span class="currency">$</span>
+              <span class="amount monthly-price">1999</span>
+              <span class="period">/mo</span>
+            </div>
+            <p>Ideal for growing businesses ready to scale their digital presence.</p>
+          </div>
+          <ul class="plan-features">
+            <li><i class="ri-check-circle-fill"></i> 3-5 Pages</li>
+            <li><i class="ri-check-circle-fill"></i> Advanced Design</li>
+            <li><i class="ri-check-circle-fill"></i> Full SEO Package</li>
+            <li><i class="ri-check-circle-fill"></i> E-Commerce Ready</li>
+            <li><i class="ri-check-circle-fill"></i> CMS Integration</li>
+            <li><i class="ri-check-circle-fill"></i> 3 Months Support</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary" id="standard-cta">Get Started</a>
+        </div>
+
+        <div class="pricing-card" id="plan-premium">
+          <div class="plan-header">
+            <div class="plan-icon"><i class="ri-vip-crown-fill"></i></div>
+            <h3>Premium</h3>
+            <div class="plan-price">
+              <span class="currency">$</span>
+              <span class="amount monthly-price">2999</span>
+              <span class="period">/mo</span>
+            </div>
+            <p>For enterprises that demand the best — AI, custom solutions, and full-service.</p>
+          </div>
+          <ul class="plan-features">
+            <li><i class="ri-check-circle-fill"></i> Unlimited Pages</li>
+            <li><i class="ri-check-circle-fill"></i> Premium Design</li>
+            <li><i class="ri-check-circle-fill"></i> Full SEO</li>
+            <li><i class="ri-check-circle-fill"></i> E-Commerce + CMS</li>
+            <li><i class="ri-check-circle-fill"></i> AI Integration</li>
+            <li><i class="ri-check-circle-fill"></i> 12 Months Support</li>
+            <li><i class="ri-check-circle-fill"></i> Dedicated Manager</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline" id="premium-cta">Get Started</a>
+        </div>
+
+      </div>
+      <p class="pricing-note reveal"><i class="ri-information-line"></i> All plans include free consultation. <a href="#contact">Contact us</a> for custom enterprise pricing.</p>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section contact" id="contact" aria-label="Contact Us">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Let's Build Something <span class="gradient-text">Amazing</span></h2>
+        <p class="section-desc">Have a project in mind? We'd love to hear about it. Send us a message and we'll get back within 24 hours.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info reveal">
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="ri-mail-fill"></i></div>
+            <div>
+              <h4>Email Us</h4>
+              <a href="mailto:webynix18@gmail.com">webynix18@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="ri-phone-fill"></i></div>
+            <div>
+              <h4>Call Us</h4>
+              <a href="tel:+15551234567">+91 6374486374</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="ri-map-pin-fill"></i></div>
+            <div>
+              <h4>Visit Us</h4>
+              <p>112-4, Balan Nagar, Pasupathikovil, Thanjavur - 614 206</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="ri-time-fill"></i></div>
+            <div>
+              <h4>Working Hours</h4>
+              <p>Mon – Fri: 9AM – 7PM (EST)</p>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/boopathirajam/" class="social-btn" aria-label="Webynix LinkedIn"><i class="ri-linkedin-fill"></i></a>
+              <a href="https://github.com/BoopathirajaM" class="social-btn" aria-label="Webynix GitHub"><i class="ri-github-fill"></i></a>
+              <a href="https://wa.me/916374486374" class="social-btn" aria-label="Webynix Whatsapp"><i class="ri-whatsapp-fill"></i></a>
+              <a href="https://www.instagram.com/webynix_/" class="social-btn" aria-label="Webynix Instagram"><i class="ri-instagram-fill"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form reveal" id="contactForm" method="POST" data-netlify="true" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Full Name <span class="required">*</span></label>
+              <div class="input-wrapper">
+                <i class="ri-user-line"></i>
+                <input type="text" id="contactName" name="name" placeholder="John Doe" autocomplete="name" required aria-required="true" />
+              </div>
+              <span class="field-error" id="nameError" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email Address <span class="required">*</span></label>
+              <div class="input-wrapper">
+                <i class="ri-mail-line"></i>
+                <input type="email" id="contactEmail" name="email" placeholder="john@example.com" autocomplete="email" required aria-required="true" />
+              </div>
+              <span class="field-error" id="emailError" role="alert"></span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactPhone">Phone Number <span class="required">*</span></label>
+              <div class="input-wrapper">
+                <i class="ri-phone-line"></i>
+                <input type="tel" id="contactPhone" name="phone" placeholder="+91 98765 43210" required aria-required="true" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <div class="input-wrapper">
+                <i class="ri-file-text-line"></i>
+                <input type="text" id="contactSubject" name="subject" placeholder="Project Inquiry" />
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contactService">Service Interested In</label>
+            <div class="input-wrapper select-wrapper">
+              <i class="ri-briefcase-line"></i>
+              <select id="contactService" name="service">
+                <option value="">Select a service…</option>
+                <option value="web">Web Development</option>
+                <option value="design">UI/UX Design</option>
+                <option value="graphic">Graphic Design</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Message <span class="required">*</span></label>
+            <div class="textarea-wrapper">
+              <textarea id="contactMessage" name="message" rows="5" placeholder="Tell us about your project…" required aria-required="true"></textarea>
+            </div>
+            <span class="field-error" id="messageError" role="alert"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+            <span class="btn-text"><i class="ri-send-plane-fill"></i> Send Message</span>
+            <span class="btn-loader" style="display:none;"><i class="ri-loader-4-fill spin"></i> Sending…</span>
+          </button>
+          <div class="form-success" id="formSuccess" role="alert" aria-live="polite" style="display:none;">
+            <i class="ri-checkbox-circle-fill"></i>
+            <div>
+              <strong>Message Sent!</strong>
+              <p>Thank you! We'll get back to you within 24 hours.</p>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+
+          <div class="footer-brand">
+            <a href="#home" class="nav-logo" aria-label="Webynix">
+              <img src="./webynix_.PNG" alt="Webynix Logo" class="logo-img footer-logo-img" />
+            </a>
+            <p>Building digital futures that drive real-world results. Your vision, our expertise.</p>
+            <div class="footer-socials">
+              <a href="https://www.linkedin.com/in/boopathirajam/" class="social-btn sm" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+              <a href="https://github.com/BoopathirajaM" class="social-btn sm" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+              <a href="https://wa.me/916374486374" class="social-btn sm" aria-label="Whatsapp"><i class="ri-whatsapp-fill"></i></a>
+              <a href="https://www.instagram.com/webynix_/" class="social-btn sm" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-links-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#team">Our Team</a></li>
+              <li><a href="#process">Our Process</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Web Development</a></li>
+              <li><a href="#services">UI/UX Design</a></li>
+              <li><a href="#services">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-col">
+            <h4>Get In Touch</h4>
+            <ul class="footer-contact-list">
+              <li><i class="ri-mail-line"></i><a href="mailto:webynix18@gmail.com">webynix18@gmail.com</a></li>
+              <li><i class="ri-phone-line"></i><a href="tel:+916374486374">+91 6374486374</a></li>
+              <li><i class="ri-map-pin-line"></i><span>112-4, Balan Nagar, Pasupathikovil, Thanjavur - 614 206</span></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="footerYear">2024</span> <strong>Webynix</strong>. All rights reserved. Built by the Webynix Team.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
